@@ -489,7 +489,7 @@ html.theming,html.theming body,html.theming .slide,html.theming .panel,html.them
     </div>
     <div class="rules">
       <div class="rule rv" style="--d:.15s"><p class="k">No total score</p><p>Domains are not exchangeable — a High in disconfirming evidence cannot be offset by Lows elsewhere. Explicit rules, not arithmetic, govern the overall judgment.</p></div>
-      <div class="rule rv" style="--d:.3s"><p class="k">Every judgment meets its remedy</p><p>Each domain's corrective action is printed beside its judgment — flag a concern, see the fix. High concern ends in a diagnostic pause with fresh eyes.</p></div>
+      <div class="rule rv" style="--d:.3s"><p class="k">Every judgment meets its remedy</p><p>Each domain's corrective action is printed beside its judgment — flag a concern, see the fix. High concern ends in a diagnostic pause with an independent review.</p></div>
       <div class="rule rv" style="--d:.45s"><p class="k">The decision, not the clinician</p><p>"High concern" means the conditions favored bias — which happens to every clinician on every busy day. Nothing feeds a performance review.</p></div>
     </div>
   </div>
@@ -515,7 +515,7 @@ html.theming,html.theming body,html.theming .slide,html.theming .panel,html.them
     <p class="eyebrow rv">Interactive · the pocket version</p>
     <h2 class="rv">Six letters before you commit.</h2>
     <div class="pausedgrid rv" style="--d:.15s" id="pausedgrid"></div>
-    <p class="pausedrule rv" style="--d:.3s">One uneasy letter → do that letter's fix. <b>Two or more → fresh eyes</b> before committing.</p>
+    <p class="pausedrule rv" style="--d:.3s">One uneasy letter → do that letter's fix. <b>Two or more → an independent review</b> before committing.</p>
   </div>
 </section>
 
@@ -756,14 +756,14 @@ lblB.addEventListener('click',function(){setFraming('B');});
 
 /* domains */
 var DOMAINS=[
-{n:1,name:'Case framing & first impressions',sq:'Did the working diagnosis originate from the clinician’s own synthesis — or from an inherited label (triage, referral, old chart, parent’s theory) never independently re-derived?',ex:'Assigned to the fast track at the door; the workup stays fast-track shallow even when the illness is not.',act:'Re-derive the case from primary data.'},
+{n:1,name:'Case framing & first impressions',sq:'Did the working diagnosis come from the clinician’s own assessment, or from a label inherited from triage, a referral, the old chart, or the parent?',ex:'Assigned to the fast track at the door; the workup stays fast-track shallow even when the illness is not.',act:'Re-derive the case from primary data.'},
 {n:2,name:'Information gathering',sq:'Did data collection stop at the first finding that satisfied the leading diagnosis?',ex:'Fracture found on the film; the second fracture — and the cause of the fall — missed.',act:'Close the data gap.'},
 {n:3,name:'Differential diagnosis & alternatives',sq:'Was at least one plausible alternative AND one cannot-miss diagnosis explicitly named?',ex:'Vomiting and fever labeled gastroenteritis; appendicitis is diagnosed on day 2.',act:'Deliberate reflection: for each top alternative, what fits, what does not, what is expected but absent.'},
 {n:4,name:'Disconfirming evidence & interpretation',sq:'What was the strongest evidence against the working diagnosis — and was it addressed on its merits?',ex:'Vomiting labeled “feeding intolerance”; the nursing note says the emesis was green — bilious vomiting, never addressed.',act:'Confront what doesn’t fit.'},
 {n:5,name:'Probability & base rates',sq:'Was pretest probability articulated — even coarsely — before test results were interpreted?',ex:'A weakly positive rare-disease serology accepted as diagnostic in a low-risk child.',act:'State the pretest probability.'},
 {n:6,name:'Reassessment & momentum',sq:'Was there a defined trigger — time or criteria — for re-deriving the diagnosis?',ex:'“Viral gastroenteritis” survives three shift changes without re-derivation.',act:'Set a written reassessment trigger.'},
-{n:7,name:'Contextual, emotional & social influences',sq:'Did anyone (a junior colleague, a nurse, the family, the patient) raise information that conflicted with the diagnosis without it being acted on?',ex:'An infant’s inconsolable crying attributed to “first-time-parent anxiety”; non-accidental trauma is diagnosed at the second visit.',act:'Name the influence; apply the substitution test.'},
-{n:8,name:'Uncertainty communication & safety-netting',sq:'Did the family receive specific red flags and a timeframe — not just “return if worse”?',ex:'Parents leave with “come back if it gets worse” — no red flags, no timeframe, no recovery path.',act:'Structured safety-netting.'}
+{n:7,name:'Contextual, emotional & social influences',sq:'Did anyone (a junior colleague, a nurse, the family, the patient) raise information that conflicted with the diagnosis, and was it acted on?',ex:'An infant’s inconsolable crying attributed to “first-time-parent anxiety”; non-accidental trauma is diagnosed at the second visit.',act:'Name the influence, then ask whether the same decision would be made for a different patient with identical data.'},
+{n:8,name:'Uncertainty communication & safety-netting',sq:'Did the family receive specific red flags and a timeframe — not just “return if worse”?',ex:'Parents leave with “come back if it gets worse” — no red flags, no timeframe, no recovery path.',act:'Build the safety-net: state the uncertainty, name specific red flags and a timeframe, and define the follow-up route.'}
 ];
 var domgrid=document.getElementById('domgrid');
 var domdetail=document.getElementById('domdetail');
@@ -795,7 +795,7 @@ renderDomain(DOMAINS[0]);
 var TIERS={
 full:{meta:'FULL · 10–15 min · case review, M&M, diagnostic safety, QI',items:['3–4 signaling questions per domain — Domain 3 asks:','“Was at least one plausible alternative AND one cannot-miss diagnosis explicitly named?”','“Were features that did not fit identified — or explained away?”','“Is the leading diagnosis prominent because of evidence — or because it was recent, feared, or familiar?”','Per-domain judgment with inline action · rule-based overall judgment · action box'],same:'Judged from what was known at the time — never from the outcome.'},
 brief:{meta:'BRIEF · DRVA-8 · 2–3 min · rounds, handoffs, the diagnostic time-out',items:['One question per domain — Domain 3 becomes:','“ALTERNATIVES — have we named a plausible alternative and the cannot-miss diagnosis?”','Same four judgments · same action logic · any single High ends the time-out with a concrete change'],same:'Same domains, same language — learning one version teaches the others.'},
-pocket:{meta:'POCKET · “Have you PAUSED?” · under 60 seconds · before you commit',items:['Domain 3 compresses to a single letter:','“A — Alternatives: What else could this be? What can’t I afford to miss?”','Six prompts, aloud or in your head · any uneasy answer means say it out loud to someone'],same:'The habit formed at the bedside becomes the vocabulary of case review.'}
+pocket:{meta:'POCKET · “Have you PAUSED?” · under 60 seconds · before you commit',items:['Domain 3 compresses to a single letter:','“A — Alternatives: What else could this be? What can’t I afford to miss?”','Six prompts, aloud or in your head · if any answer makes you uneasy, say so out loud to someone'],same:'The habit formed at the bedside becomes the vocabulary of case review.'}
 };
 var tierpanel=document.getElementById('tierpanel');
 var tierBtns=document.querySelectorAll('.tiertoggle button');
@@ -818,7 +818,7 @@ var PAUSED=[
 {l:'U',w:'Updating',p:'What has changed since the plan was made — and did the plan change with it?'},
 {l:'S',w:'Surprises',p:'What doesn’t fit — and did I look for anything that could prove me wrong?'},
 {l:'E',w:'Emotions & Environment',p:'How do I feel about this patient and this shift — and is that steering me?'},
-{l:'D',w:'Doubt, shared',p:'Have I told the family and the team what I’m unsure about — and given specific red flags and a timeframe?'}
+{l:'D',w:'Doubt, shared',p:'Have I told the patient or family and the team what I’m unsure about, and given the patient or family specific red flags and a timeframe?'}
 ];
 var pausedgrid=document.getElementById('pausedgrid');
 PAUSED.forEach(function(c){
