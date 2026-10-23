@@ -357,7 +357,7 @@ html.theming,html.theming body,html.theming .slide,html.theming .panel,html.them
   <div class="slide-inner">
     <p class="eyebrow rv">The problem</p>
     <h2 class="rv">"Am I missing something?"</h2>
-    <p class="lede rv" style="--d:.1s">Every clinician asks it at the end of a shift. Right now, the answer is unstructured worry. The numbers explain why.</p>
+    <p class="lede rv" style="--d:.1s">Every clinician asks it at the end of a shift, and at present nothing structures the answer. The numbers show how common the problem is.</p>
     <div class="bignums">
       <div class="bignum rv" style="--d:.15s"><div class="n" data-count="795000">0</div><p>Deaths or permanent disabilities per year in the US attributed to misdiagnosis of dangerous diseases.</p></div>
       <div class="bignum rv" style="--d:.3s"><div class="n" data-count="54"><span>0</span><small>%</small></div><p>Of pediatricians report making a diagnostic error at least once or twice a month — 77% among trainees.</p></div>
@@ -425,18 +425,18 @@ html.theming,html.theming body,html.theming .slide,html.theming .panel,html.them
     <h2 class="rv">Change the question.</h2>
     <div class="qshift">
       <div class="qcard dead rv" style="--d:.15s">
-        <span class="tag">Unanswerable</span>
+        <span class="tag">Cannot be determined</span>
         <p class="q">"Was this decision biased?"</p>
         <p class="why">Cannot be established in an individual case — and the attempt is contaminated by outcome knowledge.</p>
       </div>
       <div class="arrow rv" style="--d:.3s" aria-hidden="true">→</div>
       <div class="qcard live rv" style="--d:.4s">
-        <span class="tag">Answerable</span>
+        <span class="tag">Can be judged from the record</span>
         <p class="q">"Was it made under conditions where bias flourishes?"</p>
-        <p class="why">An inherited label never re-derived. No named alternative. A misfit explained away. A plan running on momentum. All visible in the record — <em>before</em> the outcome is known.</p>
+        <p class="why">The record shows whether a label was inherited and never re-examined, whether an alternative was named, whether a finding that did not fit was explained away, and whether the plan simply carried on. All of this is visible <em>before</em> the outcome is known.</p>
       </div>
     </div>
-    <p class="lede rv" style="--d:.55s;margin-top:2rem">The DRVA grades those conditions — <strong>reasoning vulnerability</strong> — through domains, signaling questions, and graded judgments. Never a verdict that bias occurred.</p>
+    <p class="lede rv" style="--d:.55s;margin-top:2rem">The DRVA grades those conditions — <strong>reasoning vulnerability</strong> — through domains, signaling questions, and graded judgments. It never concludes that a bias occurred.</p>
   </div>
 </section>
 
@@ -465,7 +465,7 @@ html.theming,html.theming body,html.theming .slide,html.theming .panel,html.them
         </ul>
       </div>
     </div>
-    <p class="framing-punch rv" style="--d:.45s">The data never changed. <b>The label did.</b> DRVA Domain 1 asks exactly this: would the same data, arriving with a different label, plausibly have led elsewhere?</p>
+    <p class="framing-punch rv" style="--d:.45s">The clinical data are identical in both versions; <b>only the arriving label differs.</b> DRVA Domain 1 asks exactly this: if the same data had arrived with a different label, or in a different setting, would the thinking have gone differently?</p>
   </div>
 </section>
 
@@ -483,14 +483,14 @@ html.theming,html.theming body,html.theming .slide,html.theming .panel,html.them
 <section class="slide" data-name="No score">
   <div class="slide-inner">
     <p class="eyebrow rv">By design</p>
-    <h2 class="rv">Judgments, not arithmetic.</h2>
+    <h2 class="rv">Graded judgments instead of a total score.</h2>
     <div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-top:1.4rem" class="rv">
       <span class="chip low">Low concern</span><span class="chip some">Some concern</span><span class="chip high">High concern</span><span class="chip nei">Not enough information</span>
     </div>
     <div class="rules">
-      <div class="rule rv" style="--d:.15s"><p class="k">No total score</p><p>Domains are not exchangeable — a High in disconfirming evidence cannot be offset by Lows elsewhere. Explicit rules, not arithmetic, govern the overall judgment.</p></div>
-      <div class="rule rv" style="--d:.3s"><p class="k">Every judgment meets its remedy</p><p>Each domain's corrective action is printed beside its judgment — flag a concern, see the fix. High concern ends in a diagnostic pause with an independent review.</p></div>
-      <div class="rule rv" style="--d:.45s"><p class="k">The decision, not the clinician</p><p>"High concern" means the conditions favored bias — which happens to every clinician on every busy day. Nothing feeds a performance review.</p></div>
+      <div class="rule rv" style="--d:.15s"><p class="k">No total score</p><p>Domains are not exchangeable, so a High judgment in disconfirming evidence cannot be offset by Low judgments elsewhere. Explicit rules, rather than a sum, determine the overall judgment.</p></div>
+      <div class="rule rv" style="--d:.3s"><p class="k">Every judgment comes with an action</p><p>Each domain's corrective action is printed beside its judgment, so a concern leads straight to what to do about it. High concern ends in a diagnostic pause with an independent review.</p></div>
+      <div class="rule rv" style="--d:.45s"><p class="k">Non-punitive by design</p><p>"High concern" means that the conditions favored bias, which happens to every clinician on a busy day. No part of it is used in performance review.</p></div>
     </div>
   </div>
 </section>
@@ -515,25 +515,25 @@ html.theming,html.theming body,html.theming .slide,html.theming .panel,html.them
     <p class="eyebrow rv">Interactive · the pocket version</p>
     <h2 class="rv">Six letters before you commit.</h2>
     <div class="pausedgrid rv" style="--d:.15s" id="pausedgrid"></div>
-    <p class="pausedrule rv" style="--d:.3s">One uneasy letter → do that letter's fix. <b>Two or more → an independent review</b> before committing.</p>
+    <p class="pausedrule rv" style="--d:.3s">If one letter makes you uneasy, take the action for that domain. <b>If two or more do, get an independent review</b> before committing.</p>
   </div>
 </section>
 
 <!-- 11 · WORKFLOW -->
 <section class="slide" data-name="Does it fit?">
   <div class="slide-inner">
-    <p class="eyebrow rv">Will it survive a real shift?</p>
-    <h2 class="rv">The pause fits. It just needs content.</h2>
+    <p class="eyebrow rv">Does it fit a real shift?</p>
+    <h2 class="rv">A time-out fits the workflow, but it needs content.</h2>
     <p class="lede rv" style="--d:.1s">In a 2026 four-hospital pediatric pilot, a team diagnostic time-out ran at unplanned PICU transfers:</p>
     <div class="pilot">
-      <div class="stat rv" style="--d:.2s"><div class="n">&gt;90%</div><p>of time-outs took <strong>5 minutes or less</strong> — the pause is feasible inside real pediatric workflows.</p></div>
-      <div class="stat warn rv" style="--d:.35s"><div class="n">28%</div><p>agreed it actually <strong>changed or added to the differential</strong> — the lowest-rated value item. An unstructured pause doesn't generate diagnostic content.</p></div>
+      <div class="stat rv" style="--d:.2s"><div class="n">&gt;90%</div><p>of time-outs took <strong>5 minutes or less</strong>, so a pause can fit into real pediatric workflows.</p></div>
+      <div class="stat warn rv" style="--d:.35s"><div class="n">28%</div><p>of completed surveys agreed it <strong>changed or added to the differential</strong>, the lowest-rated item. A pause without structured content seldom changed the differential.</p></div>
     </div>
-    <p class="lede rv" style="--d:.5s;margin-top:1.6rem">That gap is precisely what DRVA-8 supplies: eight questions that give the time-out something to find.</p>
+    <p class="lede rv" style="--d:.5s;margin-top:1.6rem">DRVA-8 is designed to give the time-out that content, one question per domain. Whether it changes the differential in practice has not been tested.</p>
     <div class="wins">
       <div class="panel rv" style="--d:.6s"><h3>A shared M&amp;M vocabulary</h3><p>Case review examines the reasoning, not the resident.</p></div>
-      <div class="panel rv" style="--d:.7s"><h3>Psychological safety by construction</h3><p>No score exists that could enter a performance evaluation.</p></div>
-      <div class="panel rv" style="--d:.8s"><h3>Visible safety behaviors</h3><p>Uncertainty documentation and specific safety-netting become reviewable.</p></div>
+      <div class="panel rv" style="--d:.7s"><h3>Psychological safety</h3><p>No score exists that could enter a performance evaluation.</p></div>
+      <div class="panel rv" style="--d:.8s"><h3>Visible safety-netting</h3><p>Residents state their uncertainty and their safety plan, and a supervisor can see both.</p></div>
     </div>
     <p class="foot rv" style="--d:.9s">Sawicki et al, Hosp Pediatr 2026</p>
   </div>
@@ -543,40 +543,38 @@ html.theming,html.theming body,html.theming .slide,html.theming .panel,html.them
 <section class="slide" data-name="The paper">
   <div class="slide-inner">
     <p class="eyebrow rv">The paper</p>
-    <h2 class="rv">Synthesis, not invention — and the gap is real.</h2>
+    <h2 class="rv">Built from existing work, combined in a way no tool we found offers.</h2>
     <div class="papergrid">
       <div class="panel rv" style="--d:.15s">
-        <h3>The gap, verified</h3>
-        <p>A logged PubMed search (ten queries, no date limits, 926 records), and every existing tool reviewed one by one:</p>
+        <h3>The gap</h3>
+        <p>Fifteen existing tools, compared one by one:</p>
         <ul>
-          <li>Checklists prompt but don't grade</li>
-          <li>Safer Dx detects error, not vulnerability</li>
-          <li>Bias taxonomies can't reach the bedside</li>
-          <li><strong>No instrument grades decision-level reasoning vulnerability</strong></li>
+          <li>Checklists prompt reflection but do not grade it</li>
+          <li>Safer Dx detects whether an error occurred; it does not assess vulnerability</li>
+          <li>Bias taxonomies are too long to use at the bedside</li>
+          <li><strong>No instrument that we found grades the reasoning vulnerability of a single decision</strong></li>
         </ul>
       </div>
       <div class="panel rv" style="--d:.3s">
-        <h3>Every ingredient is inherited</h3>
-        <p>Domain-and-signaling-question architecture from RoB 2. Checklist practicality from Ely. Pocket brevity from TWED. The time-out from Trowbridge. Hindsight defenses from incident analysis.</p>
-        <p style="margin-top:.6rem"><strong>The combination is new.</strong></p>
+        <h3>Each component comes from earlier work</h3>
+        <p>The domain and signaling-question structure comes from RoB 2, the practical checklist format from Ely, the pocket length from TWED, the time-out from Trowbridge, and the safeguards against hindsight from the incident-analysis literature.</p>
+        <p style="margin-top:.6rem"><strong>What is new is how they are combined.</strong></p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- 13 · VALIDATION PATH -->
-<section class="slide" data-name="If it earns interest">
+<!-- 13 · NOT YET VALIDATED -->
+<section class="slide" data-name="Not yet validated">
   <div class="slide-inner">
-    <p class="eyebrow rv">Optional future work</p>
-    <h2 class="rv">If the tool earns interest, each claim gets its test.</h2>
+    <p class="eyebrow rv">What has not been done</p>
+    <h2 class="rv">The tool has not been validated.</h2>
     <div class="vsteps">
-      <div class="vstep rv" style="--d:.1s"><span class="num">STEP 1</span><h3>Expert panel review</h3><p class="q">Do the questions measure the right thing?</p><p>A multispecialty panel rates every question; wording is revised until the panel agrees.</p></div>
-      <div class="vstep rv" style="--d:.2s"><span class="num">STEP 2</span><h3>Think-aloud interviews</h3><p class="q">Do users read it as intended?</p><p>Clinicians talk through the tool while completing it; any question that gets misread is rewritten.</p></div>
-      <div class="vstep rv" style="--d:.3s"><span class="num">STEP 3</span><h3>Usability pilot</h3><p class="q">Does it fit the workflow?</p><p>Timed, real-world use on a ward, in an emergency department, and at an M&amp;M conference.</p></div>
-      <div class="vstep rv" style="--d:.4s"><span class="num">STEP 4</span><h3>Reliability testing</h3><p class="q">Do two raters agree?</p><p>Two clinicians judge the same cases independently; their judgments are compared.</p></div>
-      <div class="vstep rv" style="--d:.5s"><span class="num">STEP 5</span><h3>Hindsight experiment</h3><p class="q">Does the design resist hindsight?</p><p>Reviewers rate identical cases, half knowing the outcome, half not. DRVA judgments should shift less than bias-labeling does.</p></div>
+      <div class="vstep rv" style="--d:.1s"><h3>Content validation</h3><p>Whether the questions cover the right ground and are read the way they are intended.</p></div>
+      <div class="vstep rv" style="--d:.2s"><h3>Reliability testing</h3><p>Whether two clinicians judging the same case reach the same judgments.</p></div>
+      <div class="vstep rv" style="--d:.3s"><h3>Hindsight test</h3><p>Whether DRVA judgments shift less than bias labels do when reviewers know how the case ended.</p></div>
     </div>
-    <p class="vnote rv" style="--d:.65s">The steps run in this order, each gating the next — and all of it is deliberately optional, to be taken up if the tool finds users and collaborators. No claim of benefit is made before these tests are done.</p>
+    <p class="vnote rv" style="--d:.45s">These remain future work, as the paper states, and no claim of benefit is made until they are done.</p>
   </div>
 </section>
 
@@ -756,14 +754,14 @@ lblB.addEventListener('click',function(){setFraming('B');});
 
 /* domains */
 var DOMAINS=[
-{n:1,name:'Case framing & first impressions',sq:'Did the working diagnosis come from the clinician’s own assessment, or from a label inherited from triage, a referral, the old chart, or the parent?',ex:'Assigned to the fast track at the door; the workup stays fast-track shallow even when the illness is not.',act:'Re-derive the case from primary data.'},
-{n:2,name:'Information gathering',sq:'Did data collection stop at the first finding that satisfied the leading diagnosis?',ex:'Fracture found on the film; the second fracture — and the cause of the fall — missed.',act:'Close the data gap.'},
-{n:3,name:'Differential diagnosis & alternatives',sq:'Was at least one plausible alternative AND one cannot-miss diagnosis explicitly named?',ex:'Vomiting and fever labeled gastroenteritis; appendicitis is diagnosed on day 2.',act:'Deliberate reflection: for each top alternative, what fits, what does not, what is expected but absent.'},
-{n:4,name:'Disconfirming evidence & interpretation',sq:'What was the strongest evidence against the working diagnosis — and was it addressed on its merits?',ex:'Vomiting labeled “feeding intolerance”; the nursing note says the emesis was green — bilious vomiting, never addressed.',act:'Confront what doesn’t fit.'},
-{n:5,name:'Probability & base rates',sq:'Was pretest probability articulated — even coarsely — before test results were interpreted?',ex:'A weakly positive rare-disease serology accepted as diagnostic in a low-risk child.',act:'State the pretest probability.'},
-{n:6,name:'Reassessment & momentum',sq:'Was there a defined trigger — time or criteria — for re-deriving the diagnosis?',ex:'“Viral gastroenteritis” survives three shift changes without re-derivation.',act:'Set a written reassessment trigger.'},
-{n:7,name:'Contextual, emotional & social influences',sq:'Did anyone (a junior colleague, a nurse, the family, the patient) raise information that conflicted with the diagnosis, and was it acted on?',ex:'An infant’s inconsolable crying attributed to “first-time-parent anxiety”; non-accidental trauma is diagnosed at the second visit.',act:'Name the influence, then ask whether the same decision would be made for a different patient with identical data.'},
-{n:8,name:'Uncertainty communication & safety-netting',sq:'Did the family receive specific red flags and a timeframe — not just “return if worse”?',ex:'Parents leave with “come back if it gets worse” — no red flags, no timeframe, no recovery path.',act:'Build the safety-net: state the uncertainty, name specific red flags and a timeframe, and define the follow-up route.'}
+{n:1,name:'Case framing & first impressions',sq:'Did the working diagnosis come from the clinician’s own assessment, or from a label inherited from triage, a referral, the old chart, or the parent?',ex:'A child is sent to the fast track at the door, and the workup stays as limited as a fast-track visit even though the illness is serious.',act:'Restate the case in your own words from the primary data (history, examination, and results), setting the inherited label aside, and check whether the working diagnosis still follows.'},
+{n:2,name:'Information gathering',sq:'Did data collection stop at the first finding that satisfied the leading diagnosis?',ex:'One fracture is found on the radiograph, and a second fracture and the cause of the fall are missed.',act:'Obtain the missing history, examination findings, or records before committing to the diagnosis.'},
+{n:3,name:'Differential diagnosis & alternatives',sq:'Was at least one plausible alternative AND one cannot-miss diagnosis explicitly named?',ex:'A child with vomiting and fever is diagnosed with gastroenteritis, and appendicitis is recognized only on day 2.',act:'For each leading alternative, list the findings that fit it, the findings that do not, and the findings you would expect but have not seen (deliberate reflection).'},
+{n:4,name:'Disconfirming evidence & interpretation',sq:'What was the strongest evidence against the working diagnosis, and was it addressed on its merits?',ex:'An infant’s vomiting is attributed to feeding intolerance, although the nursing note records green emesis; the bilious vomiting is never addressed.',act:'Address each finding that does not fit the working diagnosis: explain it, investigate it further, or revise the diagnosis.'},
+{n:5,name:'Probability & base rates',sq:'Was pretest probability articulated (even coarsely) before test results were interpreted?',ex:'A weakly positive serology for a rare disease is accepted as diagnostic in a child at low risk.',act:'Estimate the pretest probability of the working diagnosis, even roughly, before interpreting further results.'},
+{n:6,name:'Reassessment & momentum',sq:'Was there a defined trigger (time or criteria) for re-deriving the diagnosis?',ex:'A diagnosis of “viral gastroenteritis” is handed over at three shift changes, and no one rebuilds it from the primary data.',act:'Document a specific time or clinical criterion at which the diagnosis will be reconsidered.'},
+{n:7,name:'Contextual, emotional & social influences',sq:'Did anyone (a junior colleague, a nurse, the family, the patient) raise information that conflicted with the diagnosis, and was it acted on?',ex:'An infant’s inconsolable crying is attributed to “first-time-parent anxiety,” and non-accidental trauma is diagnosed only at the second visit.',act:'Identify the influence explicitly, then ask whether you would make the same decision for a different patient with the same findings.'},
+{n:8,name:'Uncertainty communication & safety-netting',sq:'Did the patient or family receive specific red flags and a timeframe (not just “return if worse”)?',ex:'The parents leave with “come back if it gets worse,” but no specific red flags, no timeframe, and no plan for follow-up.',act:'Tell the patient or family what remains uncertain and record it in the note, give specific red flags and a timeframe for return, and arrange how follow-up will happen.'}
 ];
 var domgrid=document.getElementById('domgrid');
 var domdetail=document.getElementById('domdetail');
@@ -793,9 +791,9 @@ renderDomain(DOMAINS[0]);
 
 /* tiers */
 var TIERS={
-full:{meta:'FULL · 10–15 min · case review, M&M, diagnostic safety, QI',items:['3–4 signaling questions per domain — Domain 3 asks:','“Was at least one plausible alternative AND one cannot-miss diagnosis explicitly named?”','“Were features that did not fit identified — or explained away?”','“Is the leading diagnosis prominent because of evidence — or because it was recent, feared, or familiar?”','Per-domain judgment with inline action · rule-based overall judgment · action box'],same:'Judged from what was known at the time — never from the outcome.'},
-brief:{meta:'BRIEF · DRVA-8 · 2–3 min · rounds, handoffs, the diagnostic time-out',items:['One question per domain — Domain 3 becomes:','“ALTERNATIVES — have we named a plausible alternative and the cannot-miss diagnosis?”','Same four judgments · same action logic · any single High ends the time-out with a concrete change'],same:'Same domains, same language — learning one version teaches the others.'},
-pocket:{meta:'POCKET · “Have you PAUSED?” · under 60 seconds · before you commit',items:['Domain 3 compresses to a single letter:','“A — Alternatives: What else could this be? What can’t I afford to miss?”','Six prompts, aloud or in your head · if any answer makes you uneasy, say so out loud to someone'],same:'The habit formed at the bedside becomes the vocabulary of case review.'}
+full:{meta:'FULL · 10–15 min · case review, M&M, diagnostic safety, QI',items:['Three or four signaling questions per domain. Domain 3 asks:','“Was at least one plausible alternative AND one cannot-miss diagnosis explicitly named?”','“Were features that did not fit the leading diagnosis identified, or were they explained away?”','“Is the leading diagnosis prominent because of evidence, or because it was recent, feared, or familiar?”','Each domain gets a judgment and its own action, rules combine them into an overall judgment, and the action box says what to do next'],same:'Judged from what was known at the time — never from the outcome.'},
+brief:{meta:'BRIEF · DRVA-8 · 2–3 min · rounds, handoffs, the diagnostic time-out',items:['One question per domain. Domain 3 becomes:','“ALTERNATIVES — have we named a plausible alternative and the cannot-miss diagnosis?”','The same four judgments and the same action box apply, and a High judgment on any question means the time-out ends with a concrete change'],same:'The domains and judgment language are shared, so a resident who learns one version already knows the structure of the others.'},
+pocket:{meta:'POCKET · “Have you PAUSED?” · under 60 seconds · before you commit',items:['Domain 3 compresses to a single letter:','“A — Alternatives: What else could this be? What can’t I afford to miss?”','Run through the six prompts aloud or in your head, and if any answer makes you uneasy, say so out loud to someone'],same:'Residents who use the pocket version at the bedside meet the same domains and terms later in case review.'}
 };
 var tierpanel=document.getElementById('tierpanel');
 var tierBtns=document.querySelectorAll('.tiertoggle button');
